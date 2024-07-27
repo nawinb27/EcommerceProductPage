@@ -26,7 +26,7 @@ function Product() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await axios.get('http://localhost:3000/api/data');
+        const data = await axios.get('https://ecommerce-product-server-git-main-nawinb27s-projects.vercel.app/api/data');
         setProductData(data.data);
         setProductImage(data.data.image1);
         setActiveImg('image1');
